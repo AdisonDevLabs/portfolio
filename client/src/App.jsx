@@ -194,7 +194,7 @@ const Header = ({ activeSection, setActiveSection, theme, setTheme }) => {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
-            <a href="#home" className="text-2xl font-bold text-gray-800 dark:text-white" onClick={() => setActiveSection('home')}>
+            <a href="home" className="text-2xl font-bold text-gray-800 dark:text-white" onClick={() => setActiveSection('home')}>
               Adison Cheruiyot
             </a>
           </div>
@@ -203,7 +203,7 @@ const Header = ({ activeSection, setActiveSection, theme, setTheme }) => {
               {navLinks.map((link) => (
                 <a
                   key={link.id}
-                  href={`#${link.id}`}
+                  href={`${link.id}`}
                   onClick={() => setActiveSection(link.id)}
                   className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${
                     activeSection === link.id
@@ -242,7 +242,7 @@ const Header = ({ activeSection, setActiveSection, theme, setTheme }) => {
               {navLinks.map((link) => (
                 <a
                   key={link.id}
-                  href={`#${link.id}`}
+                  href={`${link.id}`}
                   onClick={() => {
                     setActiveSection(link.id);
                     setIsOpen(false);
@@ -303,14 +303,14 @@ const Home = () => {
                         transition={{ duration: 0.8, delay: 0.6 }}
                     >
                         <a
-                            href="#projects"
+                            href="projects"
                             className="group relative inline-flex items-center justify-center px-8 py-3 text-lg font-medium text-white bg-blue-600 rounded-lg shadow-lg hover:bg-blue-700 transition-colors duration-300 w-full sm:w-auto"
                         >
                             Explore My Work
                             <ArrowRight className="ml-2 h-5 w-5 transform group-hover:translate-x-1 transition-transform" />
                         </a>
                         <a
-                            href="#contact"
+                            href="contact"
                             className="group relative inline-flex items-center justify-center px-8 py-3 text-lg font-medium text-blue-600 dark:text-blue-400 bg-transparent border-2 border-blue-600 dark:border-blue-400 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/50 transition-colors duration-300 w-full sm:w-auto"
                         >
                             Let's Connect
@@ -529,7 +529,7 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // This is a mock submission. In a real app, you'd send this to a backend.
+        // This is a mock submission. In a real app, you'd send this to a backend. 
         setStatus('sending');
         console.log("Form data submitted:", formData);
         setTimeout(() => {
