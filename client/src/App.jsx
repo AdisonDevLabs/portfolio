@@ -265,44 +265,6 @@ const Header = ({ activeSection, setActiveSection, theme, setTheme }) => {
 };
 
 const Home = () => {
-    const [loopNum, setLoopNum] = useState(0);
-    const [isDeleting, setIsDeleting] = useState(false);
-    const [text, setText] = useState('');
-    const [delta, setDelta] = useState(300 - Math.random() * 100);
-    const period = 2000;
-    const toRotate = ["Full-Stack Web Developer", "Frontend Developer", "Backend Developer"];
-
-    useEffect(() => {
-        let ticker = setInterval(() => {
-            tick();
-        }, delta);
-
-        return () => { clearInterval(ticker) };
-    }, [text, delta]);
-
-    const tick = () => {
-        let i = loopNum % toRotate.length;
-        let fullText = toRotate[i];
-        let updatedText = isDeleting
-            ? fullText.substring(0, text.length - 1)
-            : fullText.substring(0, text.length + 1);
-
-        setText(updatedText);
-
-        if (isDeleting) {
-            setDelta(prevDelta => prevDelta / 2);
-        }
-
-        if (!isDeleting && updatedText === fullText) {
-            setIsDeleting(true);
-            setDelta(period);
-        } else if (isDeleting && updatedText === '') {
-            setIsDeleting(false);
-            setLoopNum(loopNum + 1);
-            setDelta(500);
-        }
-    };
-
     return (
         <Section id="home" className="min-h-screen flex items-center justify-center text-center !pt-20">
             <div className="relative">
@@ -324,8 +286,7 @@ const Home = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
-                        <span className="text-blue-600 dark:text-blue-400 font-bold">{text}</span>
-                        <span className="blinking-cursor">|</span>
+                        <span className="text-blue-600 dark:text-blue-400 font-bold">Junior Full-Stack Developer | React • Node.js • PostgreSQL</span>
                     </motion.p>
                     <motion.p 
                         className="mt-6 max-w-2xl mx-auto text-base md:text-lg text-gray-500 dark:text-gray-400"
@@ -529,7 +490,7 @@ const Resume = () => {
             <SectionTitle>My Resume</SectionTitle>
             <div className="text-center mb-12">
                 <a 
-                    href="/adison-cheruiyot-resume.pdf" 
+                    href="/Adison_Cheruiyot_CV.pdf" 
                     download
                     className="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-blue-600 rounded-lg shadow-lg hover:bg-blue-700 transition-colors duration-300"
                 >
@@ -637,11 +598,11 @@ const Footer = () => (
 
 
 export default function App() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
   const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme') || 'light';
+    const savedTheme = localStorage.getItem('theme') || 'dark';
     setTheme(savedTheme);
   }, []);
 
