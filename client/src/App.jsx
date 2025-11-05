@@ -11,8 +11,8 @@ const projects = [
     image: "https://placehold.co/600x400/1a202c/ffffff?text=HMS",
     tags: ["Full-stack", "Backend", "Frontend"],
     stack: ["React", "Vite", "Tailwindcss", "Node.js", "PostgreSQL"],
-    github: "https://github.com/Adison-tech/afyalink-hms.git", // Replaced with a real link
-    demo: "https://afyalink-hms-frontend.onrender.com/" // Replaced with a real link
+    github: "https://github.com/Adison-tech/afyalink-hospital-management-system.git", // Replaced with a real link
+    demo: "https://afyalink-hms.onrender.com/"
   },/*
   {
     id: 2,
@@ -117,15 +117,12 @@ const skills = [
   { name: "JavaScript", level: 75 },
   { name: "React", level: 70 },
   { name: "Node.js", level: 75 },
-  { name: "MongoDB", level: 60 },
   { name: "PostgreSQL", level: 70 },
   { name: "Git", level: 75 },
   { name: "GitHub", level: 75 },
-  { name: "Vite", level: 75 },
   { name: "TailwindCSS", level: 80 },
   { name: "RESTful APIs", level: 70 },
   { name: "WebSockets", level: 55 },
-  { name: "M-Pesa Daraja API", level: 65 },
   { name: "sqlite3", level: 65 },
 ];
 
@@ -336,7 +333,7 @@ const About = () => (
         <div className="relative w-full max-w-xs mx-auto">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full transform -rotate-12"></div>
             <img 
-                src="https://placehold.co/400x400/e2e8f0/1a202c?text=Adison+Cheruiyot" // Updated with a more professional placeholder for demonstration
+                src="/file_000000006b64720c997dfa572ac4b999.png" // Updated with a more professional placeholder for demonstration
                 alt="Adison Cheruiyot professional portrait" 
                 className="relative w-full rounded-full border-4 border-white dark:border-gray-800 shadow-lg"
             />
