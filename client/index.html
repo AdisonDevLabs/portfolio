@@ -1,13 +1,40 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/logo1.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    
+    <title>Adison Kipsang | Full-Stack Systems Engineer</title>
+    <meta name="title" content="Adison Kipsang | Full-Stack Systems Engineer" />
+    <meta name="description" content="Nakuru-based Full-Stack Developer specializing in the PERN stack. Engineering secure, scalable web infrastructure and industrial-grade management systems." />
+    <meta name="author" content="Adison Kipsang Cheruiyot" />
+    <meta name="keywords" content="Full Stack Developer Nairobi, PERN Stack Kenya, Hospital Management System Developer, AdisonDevLabs, Software Engineer Kenya" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://adisondevlabs.vercel.app/" />
+    <meta property="og:title" content="Adison Kipsang | Full-Stack Systems Engineer" />
+    <meta property="og:description" content="Engineering high-performance web systems and secure digital infrastructure for modern enterprises." />
+    <meta property="og:image" content="/og-image.png" />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://adisondevlabs.vercel.app/" />
+    <meta property="twitter:title" content="Adison Kipsang | Full-Stack Systems Engineer" />
+    <meta property="twitter:description" content="Professional web infrastructure and full-stack solutions based in Nairobi, Kenya." />
+    <meta property="twitter:image" content="/og-image.png" />
+
+    <style>
+      /* Prevents FOUC (Flash of Unstyled Content) in dark mode */
+      html { background-color: #000; color-scheme: dark; }
+      @media (prefers-color-scheme: light) {
+        html { background-color: #fff; color-scheme: light; }
+      }
+    </style>
   </head>
-  <body>
+  <body class="bg-white dark:bg-black antialiased selection:bg-orange-500 selection:text-white">
     <div id="root"></div>
+    
     <script type="module" src="/src/main.jsx"></script>
-  </body>
+    
+    </body>
 </html>

@@ -14,11 +14,6 @@ module.exports = {
       },
       colors: {
         // Example of custom futuristic color palette
-        slate: {
-          900: '#0A192F',
-          800: '#112240',
-          // ... other shades
-        },
         cyan: {
           500: '#64FFDA',
           // ... other shades
