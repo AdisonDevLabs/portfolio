@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Home, About, Services, Projects, Testimonials, Resume, Contact } from './components/Sections';
+import { WhatsAppButton } from './components/WhatsAppButton';
 
 export default function App() {
   const [theme, setTheme] = useState('dark');
@@ -49,6 +50,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }
