@@ -34,7 +34,7 @@ export default function App() {
 
     sections.forEach(section => observer.observe(section));
 
-    return () => sections.forEach(section => observer.unobserve(section));
+    return () => observer.disconnect();
   }, []);
 
   return (
