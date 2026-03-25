@@ -5,7 +5,7 @@ export const projects = [
     description: "A secure, multi-tier healthcare infrastructure engineered to solve the risks of managing sensitive patient data across multiple departments. By implementing strict role-based access control (RBAC) and automated scheduling within a PERN stack architecture, the system ensures data integrity and provides the real-time operational insights necessary for modern clinical management.",
     image: "/hms.png",
     tags: ["Full-stack", "Security", "Operations"],
-    stack: ["React", "Vite", "Tailwindcss", "Node.js", "PostgreSQL"],
+    stack: ["USERNAME: adminuser", "PASSWORD: AdminPass123", "React", "Vite", "Tailwindcss", "Node.js", "PostgreSQL"],
     github: "https://github.com/Adison-tech/afyalink-hospital-management-system.git",
     demo: "https://afyalink-hms.onrender.com/"
   },/*
